@@ -1,0 +1,28 @@
+---
+data_sources:
+  - "defaults"
+  - "file"
+  - "environment"
+
+template_sources: 
+  -  "file" 
+
+default_environment: production
+
+environment:
+  prefix: ''
+  lowercase: true
+
+defaults:
+  global:
+    delay: 300
+    influxdb_host: influxdb
+    influxdb_port: 8086
+    influxdb_db: speedtest
+    influxdb_username: speedtest
+    influxdb_password: password
+    verify_ssl: False
+    log_level: info
+  params.erb:
+    target: '/src/config.ini'
+

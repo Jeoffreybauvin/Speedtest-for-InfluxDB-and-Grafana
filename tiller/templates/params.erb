@@ -1,0 +1,19 @@
+[GENERAL]
+Delay = <%= delay %>
+
+[INFLUXDB]
+Address = <%= influxdb_host %>
+Port = <%= influxdb_port %>
+Database = <%= influxdb_db %>
+Username = <%= influxdb_username %>
+Password = <%= influxdb_password %>
+Verify_SSL = <%= verify_ssl %>
+
+[SPEEDTEST]
+# Leave blank to auto pick server
+Server = <%= speedtest_server %>
+
+[LOGGING]
+# Valid Options: critical, error, warning, info, debug
+Level = <%= log_level %>
+
